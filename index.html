@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="referrer" content="never" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="//at.alicdn.com/t/font_1071461_cxr0lia2tfg.js"></script>
+    <title>豆瓣电影</title>
+  </head>
+  <body>
+    <main>
+      <section id="top250">
+        <div class="container"></div>
+        <div class="loading">
+          <svg id="loading" class="icon" aria-hidden="true">
+            <use xlink:href="#icon-dengdai"></use>
+          </svg>
+        </div>
+      </section>
+      <section id="beimei">
+        <div class="container"></div>
+        <div class="loading">
+          <svg id="loading" class="icon" aria-hidden="true">
+            <use xlink:href="#icon-dengdai"></use>
+          </svg>
+        </div>
+      </section>
+      <section id="search">
+        <div class="wrap">
+          <div class="search-area">
+            <input type="text" placeholder="搜索电影" />
+            <button>搜索</button>
+          </div>
+          <div class="search-result">
+            <div class="container"></div>
+            <div class="loading">
+              <svg id="loading" class="icon" aria-hidden="true">
+                <use xlink:href="#icon-dengdai"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="Top250 active">
+        <svg id="paixing" class="icon" aria-hidden="true">
+          <use xlink:href="#icon-paixing"></use>
+        </svg>
+        <div>Top250</div>
+      </div>
+      <div class="bm">
+        <svg id="beimei" class="icon" aria-hidden="true">
+          <use xlink:href="#icon-beimei"></use>
+        </svg>
+        <div>北美</div>
+      </div>
+      <div class="ss">
+        <svg id="search" class="icon" aria-hidden="true">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+        <div>搜索</div>
+      </div>
+    </footer>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./default.js"></script>
+  </body>
+</html>
