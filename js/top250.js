@@ -27,7 +27,7 @@ var top250 = {
     _this.isLoading = true;
     _this.$element.find(".loading").show();
     $.ajax({
-      url: "//api.douban.com/v2/movie/top250",
+      url: "//api.douban.com/v2/movie/top250?apikey=0df993c66c0c636e29ecbb5344252a4a",
       type: "GET",
       data: {
         start: this.index || 0,
@@ -52,7 +52,6 @@ var top250 = {
   },
   render: function(data) {
     var _this = this;
-    console.log(3);
     data.subjects.forEach(subject => {
       var tpl = `<div class="item">
           <a href="#">
@@ -89,8 +88,6 @@ var top250 = {
     });
   },
   isToBottom: function() {
-    console.log(this.$element.find(".container"));
-    console.log(this.$element.height() + this.$element.scrollTop());
     return (
       this.$element.find(".container") <=
       this.$element.height() + this.$element.scrollTop() + 10

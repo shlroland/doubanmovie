@@ -9,8 +9,6 @@ var search = {
         _this = this
         this.$element.find('button').click(function () { 
             _this.keyword = _this.$element.find('input')[0].value
-            console.log('_this.keyword')
-            console.log(_this.keyword)
             _this.start()
          })
     },
@@ -28,7 +26,7 @@ var search = {
       _this.isLoading = true;
       _this.$element.find(".loading").show();
       $.ajax({
-        url: "//api.douban.com/v2/movie/search",
+        url: "//api.douban.com/v2/movie/search?apikey=0df993c66c0c636e29ecbb5344252a4a",
         data:{
             q:_this.keyword
         },

@@ -19,7 +19,7 @@ var bm = {
     _this.isLoading = true;
     _this.$element.find(".loading").show();
     $.ajax({
-      url: "//api.douban.com/v2/movie/us_box",
+      url: "//api.douban.com/v2/movie/us_box?apikey=0df993c66c0c636e29ecbb5344252a4a",
       type: "GET",
       dataType: "jsonp"
     })
